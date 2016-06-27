@@ -1,0 +1,920 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{url}
+%opening
+% \title{}
+% \author{}
+
+\begin{document}
+
+% \maketitle
+
+% \begin{abstract}
+% 
+% \end{abstract}
+
+  
+  
+\section{Definiciones/conceptos generales}
+
+\begin{description}
+
+
+\item[Trait:] rasgo, caracteristica, atributo, cualidad.
+
+\item[Haplotype (haploid genotype):] a collection of specific alleles (that is, specific DNA sequences) in a cluster of tightly-linked genes on a chromosome that are likely to be inherited together—that is, they are likely to be conserved as a sequence that survives the descent of many generations of reproduction.
+
+\item[Sequence Read Archive (SRA):] makes biological sequence data available to the research community to enhance reproducibility and allow for new discoveries by comparing data sets. 
+The SRA stores raw sequencing data and alignment information from high-throughput sequencing platforms, including Roche 454 GS , Illumina Genome Analyzer, Applied Biosystems SOLiD System... 
+For the plant kingdom alone, more than 4,200 transcriptome experiments covering more than 390 species are available at the SRA. Over
+90\% of these species do not have an available draft or complete genome sequence, making the data processing and biological interpretation a challenging task. 
+In case a reference genome is available, the short reads can be processed using alignment-first (or align-then-assemble)
+methods that provide a genome-guided approach to study splice site junctions, identify new or alternative transcripts, or to quantify expression levels using known gene annotations. In contrast, for species without a
+reference genome, assemble-then-align methods require that the millions of reads are first processed using de novo assembly before the reconstructed transcriptome is further characterized. 
+Examples of downstream analysis include the remapping of the input sequence reads from the different libraries to the assembled transcripts to quantify expression levels, the remapping of all reads
+to assess the genetic diversity within a genotype, or the alignment of the assembled transcripts against genome or transcripts sequences from closely-related species.
+
+\item[Epistasis:] is the phenomenon of the effect of one gene being dependent on the presence of one or more 'modifier genes', the genetic background. 
+Thus, epistatic mutations have different effects in combination than individually.
+
+\item[Correlation:] Correlation is a technique for investigating the relationship between two \textbf{quantitative, continuous} variables.
+
+\item [Pearson's correlation]:
+In statistics, the Pearson product-moment correlation coefficient  (sometimes referred to as the PPMCC or PCC or Pearson's r) is a measure of the linear correlation between two variables X and Y, giving a value between +1 and -1 inclusive, where 1 is total positive correlation, 0 is no correlation, and -1 is total negative correlation.
+
+\item[Cross-breeding:] Cross-breeding is based on sexual reproduction. 
+In selective breeding, pollen from one parent plant is applied to the pistil of a flower of the other parent plant. 
+By crossing two specific plants, a specific trait from one plant (for example disease resistance) is combined with a trait of the other plant (for example high yield) in the offspring. 
+Cross-breeding also plays a very important role in the creation of variation as each product of cross-breeding contains a unique combination of the DNA of the father and mother.
+Moreover, during the formation of the reproductive cells, additional rearrangements occur in the DNA, meaning that new traits can appear in the descendants.
+Many new varieties are developed thanks to cross-breeding and combining selection with cross-breeding will continue to be a cornerstone of all breeding programs.
+
+However, cross-breeding has its limitations as a breeding technique as the grower does not know in advance which information is going to be passed on to the offspring.
+This form of plant breeding is considered to be ‘trial-and-error’. By cross-breeding plants, half of the maternal DNA is combined with half of the paternal DNA, but one never knows which 50\% will be passed on.
+Moreover, certain traits are often transmitted together.
+Because of this, a lot of selection is needed after cross-breeding and sometimes further cross-breeding is necessary.
+To eliminate undesirable traits, the crossing product can be cross-bred again several times with the parent that does not have the undesirable traits. This is called \textbf{backcrossing}
+
+Another limitation of cross-breeding is that it requires sexual reproduction. This means that hereditary information can only be transferred (to obtain productive offspring) between individual plants of the same species.
+Therefore, its success depends on the number of traits within a species. The greater the genetic variation within a species, the more possibilities there are to find traits of interest and combine them.
+This limitation was somehow overcame by genetic engineering, a method that allows genetic information to be inserted into a plant’s DNA without the need for cross-breeding and therefore without the need of sexual reproduction.
+
+\item[Mutation breeding:] Cross-breeding is not the appropriate method for creating new traits. 
+Instead of waiting for spontaneous mutations to occur in DNA (to obtain new traits), breeders started to work on mutation breeding. 
+With this type of breeding, changes to plant DNA can be applied at a much higher frequency. 
+However, one does not know what and where in the DNA changes will occur.
+
+\item[F1 generation:] Obatined when you cross two parents that are each homozygous for a specific characteristic but each of the parents is different for this characteristic.
+In this case you get a first generation consisting of individuals heterozygous for these characters in which the parents differ and are homozygous. It is also called first filial generation. 
+
+\item[F1 Hybrid:] F1-hybrid is a crossing product of two parental lines obtained through inbreeding. The hybrid technology therefore combines inbreeding with cross-breeding.
+The method is standard in maize breeding.
+As a first step in obtaining a F1-hybrid 2 parents with identical copies of each chromosome (homozygous) are needed. For this, inbred families are created through self-pollination: the pollen of one plant is applied to its own pistil. 
+As a result, traits are fixed in homogenous genetic material, also called the homozygous form. For crops, that have two or more copies of each gene, homozygous means that all copies are genetically identical. 
+Once the inbred families are formed, they are crossed with each other. The families are selected so as to have a variety of positive characteristics that complement each other.
+All direct offspring of these parents are genetically identical and have 2 different version of every chromosome.
+
+The disadvantage of F1-hybrids for growers is that their performance weakens in the following generations and the heterosis effect completely disappears after a number of generations. 
+This is because the offspring of F1-hybrids are no longer uniform.
+
+\item[Selection:] The selection steps in cross-breeding programs are the most demanding part.
+
+Alongside the existence or non-existence of a particular trait —which is relatively easy to select during a breeding program— there are also quantitative traits such as yield or growth speed. 
+These quantitative traits are often determined by multiple genes, which makes breeding a lot more difficult and above all, time-consuming.
+
+Cross-breeding programs can be conducted much more efficiently by selection based on DNA than on appearance when the genes that have a direct influence on the trait are known, or the neighboring genes are known. 
+For each offspring of a certain cross-breed, it can be thus determined, with the help of molecular DNA marker techniques, which combination of genes is present in the DNA
+
+\item[F2 generation:] the generation produced by interbreeding individuals of an F1 generation and consisting of individuals that exhibit the result of recombination and segregation of genes controlling traits	 for which stocks of the P1 generation differ—called also second filial generation.
+
+
+\item[RILs:] 
+An RIL is formed by crossing two inbred strains followed by repeated selfing or sibling mating to create a new inbred line whose genome is a mosaic of the parental genomes.
+Creation of a RIL population results in a set of homogeneous, homozygous lines (a family of recombinant inbred lines) for which large amounts of seed can be produced for replicated trials. Each line has a single fixed genome.
+Recombinant inbred lines derived from an advanced intercross, in which multiple generations of mating have increased the density of recombination breakpoints, are powerful tools for mapping the loci underlying complex traits. 
+Therefore, this type of population is often useful for mapping QTLs. All else being equal, the larger the family of recombinant inbred strains/lines, the greater the power and resolution with which phenotypes can be mapped to chromosomal locations.
+
+Parent strains are selected based on phenotype, marker availability, and compatibility, and they may be genetically engineered to remove unwanted variation or to introduce reporters.
+
+\item [MAGIC (multiparent advanced generation intercross populations):] 
+In MAGIC populations, RILs are generated from multiple parents by mixing the genomes of the founder lines through several rounds of mating, followed by inbreeding to obtain a set of stable homozygous lines.
+
+\item[Quantitative trait:]  is a measurable phenotype that depends on the cumulative actions of many genes and the environment. 
+These traits can vary among individuals, over a range, to produce a continuous distribution of phenotypes. 
+Examples include height, weight and blood pressure.
+\item[QTL:] Abbreviation for Quantitative Trait Locus. This is a location of a chromosome region(s) which contributes significantly to the overall phenotypes of a quantitative trait. 
+It may be (1) a locus that influences the expression of a quantitative trait, or (2) a chromosome region detected by statistical analysis that is significantly associated with variation for a quantitative trait.
+
+The majority of QTL in plants have been identified by two approaches, either bi-parental crosses exploiting recent recombinations or association analysis which exploits historical recombination.
+Both methods have limitations in facilitating candidate gene identification, whilst evaluating numerous alternative alleles and investigating epistatic interaction in breeder-relevant genetic backgrounds. (VER genetic mapping)
+
+To detect QTL four elements are required: 
+\begin{enumerate}
+ \item a population of plants that is genetically variable for the target phenotype. 
+ QTL and candidate gene identification in crops and is divided into two broad categories: first, those based on selection or natural populations and second, experimental populations.
+ \item marker systems allowing genotyping of the population.
+ \item reproducible quantitative phenotyping methodologies;
+ \item appropriate experimental and statistical methods for detecting and locating QTL.
+\end{enumerate}
+
+The detection of QTL relies on linkage disequilibrium (LD, the non-random association of alleles at separate loci located on the same chromosome), between QTL and closely linked markers persisting over generations.
+
+\item[Zea mays (maize)] Monocotyledonous plant. Shows a high level of intraspecific phenotypic variation, making
+it excellently suited for genomic approaches and to
+study complex phenotypes such as leaf size. Furthermore, the large size of the maize leaf makes it easier to
+dissect specific organ domains.
+
+In maize, differences in gene expression patterns are suggested to be a more important cause of subtle changes
+in quantitative traits than alterations in protein sequences causing defective proteins.
+Therefore, exploring transcriptome variation in mapping populations has great potential to characterize the regulatory mechanisms and candidate genes that are at the basis of phenotypic differences
+
+\item[Forward and reverse genetics:] Forward genetics is the approach of determining the genetic basis responsible for a phenotype. 
+This was initially done by generating mutants by using radiation, chemicals, or insertional mutagenesis (e.g. transposable elements). 
+Subsequent breeding takes place, mutant individuals are isolated, and then the gene is mapped. 
+Forward genetics can be thought of as a counter to reverse genetics, which determines the function of a gene by analyzing the phenotypic effects of altered DNA sequences
+
+\item[linked genes:] When two genes are close together on the same chromosome, they do not assort independently and are said to be linked. 
+Whereas genes located on different chromosomes assort independently and have a recombination frequency of 50\%, linked genes have a recombination frequency that is less than 50\%.
+
+\item[linkage desequilibrium:] the occurrence in members of a population of combinations of linked genes in non-random proportions.
+
+\item[Linkage analysis:] Study aimed at establishing linkage between genes. 
+Today linkage analysis serves as a way of gene-hunting and genetic testing. Linkage is the tendency for genes and other genetic markers to be inherited together because of their location near one another on the same chromosome.
+
+\item[Linkage map:] When all the members of the population have been scored (genotyped) with a set of molecular markers, the data can be used to make a linkage map (often described as a genetic map). The linkage map describes the linear order of markers within linkage groups.
+This process estimates how the markers are grouped together based on the number of recombination breaks between them (recombination frequency) with one genetic map unit equal to the distance between marker pairs for which one product of meiosis out of a hundred is recombinant (recombination frequency of 1 per cent).
+
+The linkage map is an essential tool for research on plants whose genomes have yet to be sequenced, since it provides a framework of marker order and spacing. 
+This in-turn allows comparative analyses with the maps and sequence of other species. 
+The linkage map also serves as a starting point to map quantitative trait loci (QTL) for target traits
+
+
+\item[gene-trait association:] The dissection of gene-trait associations and its translation into practice through plant breeding is a central aspect of modern plant biology. 
+The identification of genes underlying simply inherited traits has been very successful. 
+However, the identification of gene-trait associations for complex (multi-genic) traits in crop plants with large, often polyploid genomes has been limited by the absence of appropriate genetic resources that allow quantitative trait loci (QTL) and causal genes to be identified and localised.
+
+
+\item [genetic mapping:] describes the methods used to identify the locus of a gene and the distances between genes.
+While high throughput DNA sequencing of individuals is becoming routine, linking complex phenotypes to their molecular basis remains a major challenge. 
+The essence of all genome mapping is to place a collection of molecular markers onto their respective positions on the genome. 
+Molecular markers come in all forms. Genes can be viewed as one special type of genetic markers in the construction of genome maps, and mapped the same way as any other markers.
+
+Genetic mapping is a powerful strategy that exploits genomic information to dissect complex traits into Mendelian loci (quantitative trait loci or QTL) and identifies genetic determinants that may lead to crop improvement. 
+As marker density ceases to be a limiting factor, our ability to discover specific genetic determinants in a single mapping study depends upon the availability of populations with high genetic diversity and recombination density.
+The accuracy of the QTL mapping is dependent on the segregation between the genetic markers and thus the number of recombination events. 
+
+
+\item[mapping populations (segregation or segregating populations):]  To make a genetic mapping analysis you need a mapping population first. This refers to a population in which there is phenotypic variation.
+For example, a population may have both resistant and susceptible individuals with respect to bacterial spot.  
+(I wrote this line:) But the population also needs to allow for a high mapping resolution (have a large genetic diversity and/or high number of recombination events).
+
+The population is then genotyped with molecular markers and linkage analysis performed to estimate a linkage map for the population.
+
+F2, backcross (BC) and recombinant inbred (RI) populations derived from only two parents are the three primary types of mapping populations used for molecular mapping.
+The limitations of using such bi-parental populations are that only two alleles are analyzed and that genetic recombination in these populations is limited (especially in F2 or BC populations) which limits the resolution for QTL detection.
+
+Recently, a multi-parent advanced generation intercross (MAGIC) strategy has been proposed to interrogate multiple alleles and to provide increased recombination and mapping resolution
+The main objective of developing MAGIC populations is to promote intercrossing and shuffling of the genome.
+The advantages of using multi-parent populations are that:
+(1) more targeted traits from each of the parents can be analyzed based on the selection of parents used to make the multi-parent crosses; and
+(2) increased precision and resolution with which QTLs can be detected due to the increased level of recombination. 
+Multi-parent populations are now attractive for researchers due to the development of high-throughput SNP genotyping platforms and advances in statistical methods to analyze data from such populations.
+
+
+
+
+
+extraido del paper de correlation .... MUCHAS COSAS REPETIDAS
+
+\begin{itemize}
+ \item Linkage mapping in plants has traditionally used bi-parental crosses, in which two inbred founders are crossed to produce genetically segregating progeny. 
+The progeny genomes are reconstructed from the founder haplotypes, and QTL are mapped by their association to genetic markers. 
+Such populations provide high mapping power, but suffer from a shortage of diversity and recombination events.
+Genetic analysis in bi-parental populations only allows mapping of pairs of alleles for which the parents differ.
+
+\item An alternative approach is association mapping on diversity panels, in which individuals with unknown kinship are selected. 
+Association mapping benefits from high genetic diversity and a historical accumulation of recombination events, but its efficacy is limited by undetermined pedigrees and missing parental information.
+
+\item Multi-parent cross designs (MpCD) bridge the two approaches and dramatically increase mapping resolution and power by incorporating greater genetic diversity and by increasing the number of crossing generations in
+elevated minor allele frequency (MAF). MpCD are produced by crossing more than two inbred founder lines in one of three ways: (1) by creating panels of recombinant inbred lines (RIL) that are mosaics of the founder
+genomes (for example, mouse Collaborative Cross (CC) [5] or Multi-parent Advanced Generation InterCrosses
+(MAGIC) populations [6–8]); (2) by breeding a single
+reference inbred line to many inbred lines and creating
+multiple bi-parent RIL (for example, Nested Association
+Mapping (NAM) panel [9], Dent and Flint panels [10]);
+or (3) by crossing n founders and maintaining an out-
+bred population (for example, Diversity Outbred (DO) in
+mice [11, 12] and Heterogenous Stock (NIH-HS) in rat
+[13]). All of these designs produce mapping populations
+with superior genetic diversity [14], smaller haplotype
+blocks [15], and higher mapping power [16] than bi-
+parental mapping panels. The MAGIC, CC, and NAM
+designs produce a reusable reference population of RIL
+that can be genotyped once and phenotyped repeatedly,
+which reduces mapping costs and allows phenotypic data
+to be accumulated over time [17]. When the founder
+genomes have been fully sequenced, association mapping
+can be performed by imputing the founder sequences
+onto the MpCD genomes, which may provide single
+nucleotide mapping resolution [13]. Combined with
+founder expression data, these populations can lead to the
+discovery of variants associated with both expression and
+structural variation.
+\end{itemize}
+
+\item[Advanced Inter-crossed Lines (AILs):] are the fixed populations serving as permanent resources derived from MAGIC and are similar to recombinant inbred (RI) populations derived from bi-parental crosses. 
+AILs are generated by randomly and sequentially inter-crossing a population initially originating from a cross between two inbred lines.
+This repeatedly intermated F2 population is followed by selfing after which RILs are derived for QTL analysis.
+
+Advanced intercrosses (AIC) has been extended by including multiple parents (called heterogeneous stock), have increased recombination events in small chromosomal regions and can be used for fine mapping. 
+Each generation of random mating reduces the extent of linkage disequilibrium (LD), allowing the QTL to be mapped more precisely. 
+Lines derived from early generations can be used for QTL detection and coarse mapping, while those derived from later generations may potentially yield markers very close to the QTL due to increased crossing-over events
+after every inter-mating cycle. This allows parallel high resolution mapping of different complex traits in the same population.
+
+
+
+
+
+
+\item[QTL mapping ] 
+% 
+% 
+% % (resume bastantes cosas de lo descrito hasta ahora, sacado del review The genetics of quantitative traits: challenges and prospects):
+% % 
+The premise of QTL mapping is that QTLs can be localized through their genetic linkage to visible marker loci with genotypes that we can readily classify.
+If a QTL is linked to a marker locus, then individuals with different marker locus genotypes will have different mean values of the quantitative trait
+The most common molecular markers are SNPs, polymorphic insertions or deletions (indels) and simple sequence repeats (microsatellites).
+QTLs can be mapped in families or the segregating progeny of crosses between genetically divergent strains (linkage mapping), or in unrelated individuals from the same population (association mapping)
+
+
+\item [Systems genetics: from QTL to biology]
+The challenge of dissecting quantitative traits into individual genes and their causal QTNs should be met in the near future by applying new sequencing and genotyping technologies.
+However, a list of all genes and QTNs associated with quantitative traits is just that — a list, devoid of biological context. 
+That is, QTNs allow us to map phenotype to genotype in the absence of biological context. 
+But QTNs do not affect traits directly; they do so through complex networks of transcriptional, protein, metabolic and other molecular endophenotypes. 
+So, to gain this biological context, we need to describe the flow of information from DNA to the organismal phenotype through RNA intermediates, proteins, metabolites and other molecular endophenotypes.
+The new challenge is to understand the causative and correlative effects of genetic perturbations on these networks and their downstream effects on organismal phenotypes.
+Associating DNA sequence variation with variation in organismal phenotypes omits all of the intermediate steps in the chain of causation from genetic perturbation to phenotypic variation.
+Intermediate molecular phenotypes such as transcript abundance also vary genetically in populations and are themselves quantitative traits.
+
+‘Genetical genomics’ or systems genetics approaches integrate DNA sequence variation, variation in transcript abundance and other molecular phenotypes and variation in organismal phenotypes in a linkage or association mapping population, and allow us to interpret quantitative genetic variation in terms of
+biologically meaningful causal networks of correlated transcripts.
+(por ejemplo: cuando hay cierto alelo presente, hay mayor o menor abundancia de transcripts de cierto gen? )
+
+
+In addition to obtaining genotype and organism phenotype data, whole-genome transcript abundance for each individual in a linkage or association mapping population is quantified. 
+As usual, marker–organismal trait associations are performed to map QTLs, but the same association tests are performed between the markers and gene expression traits to map expression quantitative trait loci (eQTLs), and
+the correlations between gene expression and organismal level phenotypes are determined to identify quantitative  trait transcripts (QTTs).
+That is, QTNs are dissected into into its constituent: eQTLs and QTTs.
+
+De esta forma, los analisis se pueden dividir en 3:
+\begin{description}
+ \item QTL(QTN) mapping: maps molecular Variant con organismal trait. 
+ \item eQTL mapping:  maps molecular variant con expression trait
+  \item QTT mapping: maps expression trait con organismal trait 
+\end{description}
+
+
+
+\begin{description}
+ \item [eQTL] Common DNA variants alter the expression levels and patterns of many human genes. 
+Loci responsible for this genetic control are known as expression quantitative trait loci (eQTLs). 
+The resulting variation of gene expression across individuals has been postulated to be a determinant of phenotypic variation and susceptibility to complex disease (esto tambien se aplica a maize, ver mas abajo: the phenotypic diversity in maize is mainly under transcriptional control.).
+Some common observations have emerged from the first eQTL studies. First, local genetic associations, which are assumed to act directly or in cis on target gene regulation, have a strong influence and can often be observed across studies and validated by independent methods. 
+Second, distal genetic associations acting in trans have more subtle effects, appear more numerous in the genome and are considerably more difficult to validate.
+
+Two features distinguish eQTL mapping studies from traditional QTL mapping:
+the number of traits, that is, transcript levels, tends to be much larger than the number of individuals in the study;
+and unlike organismal phenotypes, transcripts have a local genomic context. If the molecular variant is located within the gene region of the transcript under investigation, the regulation is called a cis, proximal or local eQTL, but if the polymorphism associated with variation in the
+transcript is in another gene, it is called a trans or distal eQTL.
+
+Common features of most eQTL studies are that large numbers of transcripts are genetically variable; cis eQTLs tend to have larger effects than trans eQTLs; there tend to be more cis than trans-acting polymorphisms; 
+some genomic regions are associated with variation in the expression levels of many transcripts (eQTL hot spots); and the expression levels of many transcripts are highly correlated.
+
+\textbf{Coexpression networks} Although many thousands of transcripts are genetically variable, they are not independent: the levels of expression of many transcripts co-vary between individuals in the mapping population.
+Genetically correlated transcripts (transcripts that have the same correlation with a trait???) might be coexpressed because they belong to a regulatory network, which could provide insights into the underlying biology.
+
+Several statistical methods have been developed to group genetically correlated transcripts into modules, in which each module consists of a group of transcripts with higher correlations to each other than to the rest of the transcriptome.
+The statistical information encoded in highly correlated transcripts is redundant; assembling such genes into modules reduces the number of hypothesis tests one must consider. 
+The correlations between transcripts in a module can be visualized graphically as a network with nodes denoting transcripts and edges connecting nodes that are genetically correlated.
+In the absence of information on DNA polymorphisms, these networks represent indirect statistical relationships rather than direct interactions. 
+Incorporating information about cis and trans eQTLs can be used (HOW???? EXPLAIN!! CHECK INFORMATION IN FIG.2) to determine the direction of flow of information through the network and infer which relationships are caused directly by genetic perturbations and which ones are coregulated by genetic
+perturbations.
+The first step in building coexpression gene networks is to calculate a pairwise correlation matrix between all variable transcripts.
+
+\item[QTTs] identifying transcripts that are genetically correlated with an organismal quantitative trait. (esto es...fijarse cual patron de expresion de entre muchisimos transcripts se correlaciona con los valores de un quantitative trait??).
+Typically, several hundred quantitative trait transcripts (QTTs) are associated with any single organismal phenotype.
+However, this observation is subject to the caveat described above regarding the low statistical power and high false-positive rate of studies with small sample sizes.
+QTTs associated with an organismal quantitative trait are also genetically correlated. 
+Thus, one can construct networks relating transcriptional variation to organismal trait variation from modules of correlated QTTs, in the same manner as when networks are derived from transcript data alone (como se vio en el parrafo anterior: eQTLs y coexpression networks).
+However, causal relationships cannot be inferred from modules of correlated QTTs alone, and also require information from DNA sequence variation.(por eso el resultado es un grafo no dirigido?)
+
+(es decir, se buscan primero todos los QTT que se asocian con un cierto organismal phenotype, justamente por eso son QTT. Como generalmente son muchos (debido a falsos positivos, etc) se puede ayudar a analizar los resultados visualizandolos en una red. 
+En este caso (a diferencia de como puede ser en el caso del analissi eQTL) la red es un grafo NO dirigido. Cada nodo es un transcript y hay una conexion si dos transcripts estan significativamente coexpresados. 
+Los transcripts con mayor correlacion quedan agrupados formando clusters. Esta visualizacion ayuda al analisis
+Cada trait analizado tendra un grafo de transcripts asociado.)
+\end{description}
+
+\textbf{Systems genetics of complex traits:} 
+Dissecting a QTN into its constituent eQTLs and QTTs, is not easy in practice; one can expect a substantial coexpression network of relevant transcripts that associate both with the molecular variant and with the organismal phenotype
+Systems genetics promises to integrate these layers of information to produce directed biological networks that link molecular variants to organismal phenotypes.
+Of the transcripts that associate both with sequence and trait, only a subset will be \textbf{causal}. Experimentally, a causal transcript is identified when directly perturbing it leads to variation in the organismal phenotype. 
+By contrast, a consequence of observing natural genetic perturbations is that \textbf{non-causal associations} between a transcript and phenotype can be driven by upstream transcripts, which are the true causative transcripts. 
+A fraction of QTTs will be consequential associations, the perturbation of which will not affect the organismal phenotype. 
+\textbf{Disentangling causal relationships from consequential relationships} is the key to reconstructing biological networks, and the principal tool to study these relationships is the statistical concept of conditional dependence.
+Current techniques for causal inference include 
+Bayesian networks (Ref: An integrative genomics approach to the reconstruction of gene networks in segregating populations), 
+partial correlation analysis (Ref: Using genetic markers to orient the edges in quantitative trait networks: the NEO software) 
+and empirical Bayes procedures (Ref: Harnessing naturally randomized transcription to infer regulatory relationships among genes. Genome Biol.) ;
+
+
+Statistically defining the molecular interactions that govern phenotypic variation through natural genetic perturbations leads to tests of the models (the models son las gene networks dirigidas?):
+\begin{enumerate}
+ \item Test if causal genes in the network will affect the trait when perturbed by an induced mutation (esto es basicamente una forma de testear la correlacion entre QTL/QTN y el trait?).
+ \item A higher-level test is to determine whether the genomic effects of a new mutant allele are as predicted by the network; 
+ that is, whether transcripts downstream of the focal gene will be altered in the background of the mutant allele and whether transcripts unconnected with that gene will not be affected.
+\end{enumerate}
+
+The biological networks provide a framework for targeted testing of epistatic interactions, with the prediction that genetically correlated transcripts that are also regulated by cis eQTLs in a module associated with the organismal trait fit the criteria for potential epistasis.
+
+
+\item[Genetic correlation] is the proportion of variance that two traits share due to genetic causes.
+The genetic correlation, then, tells us how much of the genetic influence on two traits is common to both: if it is above zero, this suggests that the two traits are influenced by common genes. 
+This can be an important constraint on conceptualizations of the two traits: traits which seem different phenotypically but which share a common genetic basis require an explanation for how these genes can influence both traits.
+The genetic correlation of traits is independent of their heritability: i.e., two traits can have a very high genetic correlation even when the heritability of each is low and vice versa.
+
+
+
+\item [Pleiotropy] In a broad sense, the term pleiotropy refers to the effect of a gene on more than one phenotype, and in a narrow sense, the term refers to the effect of a particular allele on more than one phenotype
+Positive genetic correlations can occur between traits that share a common biological process or are components of the same structure, and negative genetic correlations are often found between components of fitness
+In linkage mapping studies, it is difficult to disentangle close linkage from pleiotropy, as the intervals to which QTLs map contain multiple genes.
+However, pleiotropy can be clearly shown by examining the effects of new mutations on multiple traits and by association mapping in instances in which there is little LD between adjacent genes.
+Pervasive pleiotropy also highlights the fallacy that there are genes ‘for’ particular traits.
+\textbf{The challenge is to catalogue the full range of pleiotropic effects of each gene and to distinguish the QTNs (quantitative trait nucleotides ; i.e the causing molecular variants) affecting each trait.}
+
+
+\item[Identification of new genes:] Exploiting natural variation has been proposed as a complementary approach to the traditional, gene-centric reverse and forward genetics approaches to identify new genes
+Knockdown or overexpression of single genes does not capture the extensive genetic variation present in natural populations, which results from a combination of single nucleotide substitutions, insertions, deletions, copy number variation, epigenetic changes and expression differences.
+In the monocotyledonous species Zea mays (maize), the intraspecific variation is large and offers great potential to relate genotype to phenotype. 
+\textbf{Previous studies found evidence that the phenotypic diversity in maize is mainly under transcriptional control.} 
+The recent availability of cost-efficient and high-throughput sequencing technologies to analyze transcriptomes thus provides new opportunities to gain further insights into (for example) the molecular basis of leaf size.
+
+\item Most of the papers are based on associating phenotypic variation with transcriptome variation. The difference are mostly in the mapping populations used, the phenotypic aspects evaluated, etc.
+Although analyses of transcriptional variation during maize leaf development have provided us with new insights, all these studies were restricted to one genetic background. Adding
+an additional layer of information, phenotypic variation in mapping populations, and combining this with transcriptome variation in these populations offers new
+opportunities to identify genes and regulatory mechanisms that are at the basis of phenotypic differences
+
+
+\item[Leaf size:]
+Leaf size is a complex trait determined by the interplay of several factors. 
+Dynamics of leaf development have been studied in detail in various plant species at organ and cellular level, but the insight in the underlying molecular mechanisms remains limited.
+Although regulators of both cell division and cell expansion have been identified, \textbf{mutants or transgenic lines with larger leaves tend to be composed of more cells rather than larger cells.}
+For instance, leaves of maize (Zea mays) plants with altered levels of GA (gibberellin) are affected in their growth rates, and the size of the division zone (DZ) is changed correspondingly.
+This illustrate that cell proliferation seems to be a key contributing factor to final leaf size.
+Several mapping populations are available, but up to now only few were used to determine the genetic control of leaf-related traits via quantitative trait locus (QTL) or genome wide association (GWA) studies.
+
+Due to the connection existing between the several components of the leaf growth regulatory network and the pleiotropic role of some regulators,
+it is likely that slightly altering the network by targeted and mild changes in expression of various players will be more successful to improve growth than drastic changes in expression of only one regulatory gene. 
+Fine-tuned alteration of the expression of regulatory genes in a specific organ or tissue, or during a specific stage of development, might avoid negative effects often observed by a strong ectopic expression or a complete knock-out of a gene.
+To allow network engineering, all components of the network and their interactions should be identified and dissected.
+
+
+\end{description}
+
+
+\section{Systems biology (in plants)}
+Genome-wide association studies have been able to discover genomic regions that may influence many common human diseases. 
+However uncovering genotype-phenotype association is only the first step and such associations do not typically provide the explanation of the molecular mechanism behind the relationship.
+So, these discoveries created an urgent need for methods that extend the knowledge of genotype-phenotype relationships to the level of the molecular mechanisms behind them.
+The potential impact of rare variants and epistatic interactions complicates the inference of the underlying mechanisms even further.
+Indeed, in complex diseases various combinations of genomic perturbations often lead to the same organismal level phenotype. Therefore many of complex diseases are now commonly thought of as diseases of pathways.
+
+Something similar occurs in plants, except that genotype-phenotype relation is usually mapped by QTL analysis (instead of GWAS).
+To address this emerging need, computational approaches increasingly utilize a pathway-centric perspective.
+Understanding plant regulatory networks and the biological principles by which they are governed requires knowledge of genome-scale responses during development and to environmental stimuli.
+
+Mining expression datasets, such as the transcriptomic maps, usually relies on different clustering algorithms to find groups of co-expressed genes. 
+Genes belonging to the same co-expression clusters are hypothesized to be co-regulated genes under the same internal or external cues by similar transcription factors and form a transcriptional module or subnetwork.
+Based on this, regulatory hierarchies of gene expression can be inferred
+
+For a comprehensive reconstruction of transcriptional networks it is essential to determine if a transcription factor regulates a gene in a direct or an indirect fashion.
+However, it is not possible to determine such regulatory interactions with high confidence on the basis of transcriptome data alone. 
+Chromatin immunoprecipitation coupled with hybridization to whole genome arrays (ChIP-chip) or deep sequencing (ChIPseq) promise to fill this gap.
+
+\subsection{Phenotypic modules}
+Organismal level phenotypes such as diseases are always related to some molecular level changes, the so called molecular phenotypes.
+These include, for example, the over- or under expression of particular genes.
+Therefore one of the first steps toward understanding how organismal level phenotypic variants arise is to identify the molecular level phenotypes that accompany them. 
+Gene expression emerged as a molecular level trait that can ultimately be used as such a molecular phenotype and be utilized for disease classification, identifying drug targets, and inferring interactions between genes. 
+Systematically analyzing gene expression changes in different conditions and in the context of their molecular interactions usually leads to more robust and easier to interpret results than focusing on individual genes.
+Moreover, we do not know the function of most genes and, even when the function is known, many genes are pleiotropic and their function can only be interpreted in a context dependent way.
+Therefore recent methods, building on the observation that a molecular perturbation typically affects whole modules and not just individual genes, focus on identifying \textbf{phenotypic modules} – clusters of genes or pathways – significantly enriched with genes whose expression changes are correlated with phenotypic changes. 
+An additional benefit of a module based approach is that the increased statistical power allows the identification a perturbed module even if the perturbation of each individual gene in the module might not be statistically significant. 
+
+
+\section{Objetivos - preguntas asociadas}
+\subsection{1. Network analysis}
+\begin{description}
+ \item [1.a Maize data in CorNet:] \textbf{Recently we published a transcriptomics dataset for 103 Maize RILs (\url{http://www.genomebiology.com/2015/16/1/168}). 
+ We want to further explore this data. One of the ways is co-expression analysis. 
+ We have developed a tool build co-expression networks (https://bioinformatics.psb.ugent.be/cornet\_maize/) and are currently finalizing work on some updates for this tool (done by Michiel Van Bel). 
+ Currently only array-based data is included for maize. We want to also add and analyse this RIL data, in collaboration with the group of Dirk Inzé. 
+ We can also consider adding other data we are and will be generating in the coming months (to be discussed). The aim is to work towards a publication with an update of CorNet, the additional data and analysis. }
+ 
+  In the published paper there is a (rather simple) coexpression analysis between the ??some?? genes. The idea is to extend this analysis? ver que otra informacion me puede dar CorNet. 
+ 
+ Cornet works using only data extrtacted from array based experiments??? Version 3.0: An update of the CORNET project where the PPI data is robustly updated, and an RNA-seq compendium is added to the list of available expression compendiums. 
+ Lately there were some data generated from 103 Maize RILs, this data is from RNAseq experiments, not arrays (correct?). 
+ The idea es to be able to explore this data using co-expression analysis (ver que analisis se hizo hasta el momento en el paper). So....the idea is to update Cornet to be able to make co-expresion analysis out of RNAseq data????
+ or just to be able to analyze this data???   
+ 
+ 
+  The calculations of coexpression coefficients would be done in real time during query? or you have(will have) precalculated values?  
+  
+   Es diferente trabajar con datos de sets de arrays que con RNAseq??? Extraido del FAQ de WGCNA(paquete de R para weighted correlation network analysis): 
+   As far as WGCNA is concerned, working with (properly normalized) RNA-seq data isn't really any different from working with (properly normalized) microarray data. 
+   
+ En el paper la coexpression se evalua sobre todos los genes que (anti)correlacionan con alguno de los traits, no hacen ningun analisis para traits especificos.
+
+ Work: Identify set of genes that correlate with interesting traits (esto ya esta hecho) and identify the coexpression between these (and with/between neighbours??) ???.
+ To do this, using transciption data from all the RILs with that specific trait condition, and a correlation network software (Cornet??), evaluate the coexpression between the (previously identified) candidate genes (or any other gene?) for each specific trait.
+ Later use this info downstream to see if there is any know PPI between their protein products, or TF relationship. 
+ 
+ Maybe lookup for similarities in Arabidopsis?? are there enough studies about leaf related traits?
+ 
+ Lookup for any condition where this coexpression occurs?
+ 
+  \item [1.b. Integrative network analysis:  ] \textbf{The network analysis includes: co-expression analyses, integration of available protein-protein interaction, integration of available regulatory data. 
+  Also comparative analysis of networks (2 RIL populations available) to identify common and specific hubs, edges and subclusters.}
+ 
+The are 2 RIL populations available are: 
+\begin{description}
+ \item biparental population: 103 lines of the Zea mays B73xH99 RIL population.  The variation analysis is in paper: Correlation analysis of the transcriptome of growing leaves with mature leaf parameters in a maize RIL population 
+ \item MAGIC population: analysis is in paper Genetic properties of the MAGIC maize population: a new platform for high definition QTL mapping in Zea mays. I think the analysis are done on 94 RILs of this population
+ \end{description}
+ 
+ \textbf{Combination of both populations:} In the paper Combined Large-Scale Phenotyping and Transcriptomics in Maize Reveals a Robust Growth Regulatory Network.
+ 
+ 
+ 
+ From CorNet: Integration of microarray data with PPI data can, for instance, lead to the identification of protein complexes and/or coregulated genes, a better understanding of a group of differentially expressed genes, and the prediction of putative functions for unknown genes.
+
+ The idea is to make an extensive network analysis over the RIL populations separately (this will help me to get familiar with all the software you use and/or develop), and then try to make a comparison of the two networks obtained???
+  which software do you use for network analysis??? chequea si CorNet es suficiente.
+  To update CorNet there should be a set of precalculated correlation coefficient obtained from these RNAseq experiments??? (in CorNet all stored data is precalculated and only correlations with coefficients higher than a certain threshold are stored)
+  why you never included data from experiments other than array based ??
+  
+  
+  \item [1.c]  \textbf{Next to the methodologies in CorNet, we want to explore other network inference tools
+e.g. module based (Marbach et al.. Nature Methods, 9(8):796-804, 2012) or differential  (Ideker, T. \& Krogan, N. Differential network biology (2012) Molecular Systems Biology 8: 565).}
+
+  \end{description}
+
+
+  \subsection{2. RNA-seq analysis: isoform quantification}
+\texttt{Since 2011 we are using RNA-seq for transcriptome analysis (in stead of microarrays). We have developed analysis methods and implemented these workflows in Galaxy. These analyses are gene-centric and thus make abstraction of all isoforms (only the longest is used as representative). The question remains how much information is in isoform specific expression. Recently there have been some publications describing that isoform quantification is more accurate compared to gene based quantifications. 
+We’d like to evaluate some methods (e.g. RSEM,  BitSeq, Sailfish) : compare to our current method and asses the biological added value. We have data on several inbred lines of maize where differences on this level are expected.}
+
+  \subsection{3. Comparative analysis leaf development data Arabidopsis – Maize}
+  \texttt{The focus of the group of Dirk Inzé is on leaf development, both in Arabidopsis and maize. We have performed transcriptomics experiments on Arabidopsis leaf time series and maize leaf zones, both result in data on the different developmental stages in leaf development. 
+In PLAZA (http://plaza.psb.ugent.be), a comparative genomics platform developed by the group of Klaas Vandepoele (Michiel Van Bel still involved in continued development), we have information on homologs and orthologs between Arabidopsis and Maize. 
+We want to combine these two and compare transcriptomic changes during leaf development in Arabidopsis and maize. Visualisation of data is here quite important. Initially we want to asses how useful this is, upon evaluation we consider of building more generic way of doing these type of comparisons easily.}
+  
+  
+
+
+
+
+
+
+\section{CORNET}
+La versión original es sobre Arabidopsis. La herramienta en general tiene distintas partes:
+
+\begin{itemize}
+ \item Una parte es una base de datos que recopila informacion de experimentos array based.
+ \item Hay una herramienta que permite hacer analisis de co-expresion. Creo que es la parte central: El servidor tiene 2 cosas que hay que definir para hacer una query. En primer lugar hay que defiir 1 o mas genes 
+ (si no me equivoco son los que se quieren analizar la coexpresion). Despues hay que definir el set de datos (set de experimentos de microarray) sobre los cuales hacer el query(se pueden usar datos cargados o cargar datos propios de rma (Robust Multi-array Average)).  
+ 
+  All correlation coefficients are pre-calculated and only those with a corresponding p-value $<$  0.05 (Bonferroni corrected) are stored into a database for searching (no calculations on the fly). 
+  A search request will maybe take a while to load the requested information from the database
+ \item Otra herramienta permite integrar informacion obtenida de PPIs (informacon obtenida experimentalmente o predicciones hechas mediante metodos computacionales)
+ \item Además de esto, se agrega información de localizacion y funcionalidad de los genes. 
+ These localization data are depicted in pie charts, allowing multiple localizations for one gene. The fractions of the pie chart are based on the fraction of databases in which a particular localization was found. 
+ 
+
+ \subsection{PRIMERA VERSION (UNICAMENTE DE ARABIDOPSIS THALIANA)}
+
+It consists of two flexible and versatile tools, namely the coexpression tool and the protein-protein interaction tool.
+The coexpression tool enables either the alternate or simultaneous use of diverse expression compendia, whereas the protein-protein interaction tool searches
+experimentally and computationally identified protein-protein interactions.
+Different search options are implemented to enable the construction of coexpression and/or protein-protein interaction networks centered around multiple input genes or
+proteins. Moreover, networks and associated evidence are visualized in Cytoscape.
+
+-Por un lado, recopila informacion de estudios hecho con microarrays.
+En estos estudios ...diverse tissues from wildtype plants as well as mutant or transgenic plants are sampled at different developmental stages and treated with numerous compounds.
+Using transcript profiling data, one can investigate how genes are expressed, when genes are active and/or differentially expressed, and which other genes show similar epression profiles. 
+
+-Por otro lado se recopilan datos de proteomica, puntualmente de protein-protein interaction (PPI).
+Integration of microarray data with PPI data can, for instance, lead to the identification of protein complexes and/or coregulated genes, a better understanding of a group of differentially expressed genes, and the prediction of putative functions for unknown genes.
+
+
+
+FUNDAMENTOS:
+Current coexpression tools allow the visualization of gene expression profiles and/or the search for genes that are coexpressed with one or more genes of interest. To identify coexpression, these tools employ a measure, such as the Pearson correlation coefficient, a correlation rank , or linear regression , followed by either applying an absolute cutoff or selecting the
+top x most correlated genes.
+The use of different expression data sets can yield different degrees of expression correlation between genes because some genes might behave similarly under certain conditions and differently under others. In other words, condition-dependent and condition-independent coexpression analyses have to be distinguished. Therefore, a flexible and efficient compilation of the expression data sets used to calculate expression correlation needs to be enabled.
+
+In contrast to the coexpression analysis, only a few tools provide additional functionalities, such as retrieval of PPIs, functions, pathways, and cis-regulatory elements, and the network visualization. 
+To a large extent, the representation of the output determines the accessibility and interpretability of the results.
+
+
+We developed a new user-friendly tool for data mining and integration, with the acronym CORNET.
+Para hacer esto.... We collected the majority of the currently available microarray expression data; corresponding meta-data describing sampled tissues, treatments, and time points of sampling; PPI data; localization data; and functional information in a central database.
+
+user-friendly interface allows one to query the database, enabling coexpression analysis through a multitude of search options addressing diverse biological questions.
+Several predefined expression data sets, such as global compendia representing diverse experimental conditions as well as tissue- or treatment- specific expression data sets, are provided. In addition, the user can compile expression data sets from public as well as private microarray data or can upload personal processed expression data sets.
+Coexpression also can be assessed simultaneously among several expression data sets.
+PPI networks can be reconstructed with both experimentally identified and computationally predicted data.
+
+
+Both tools (coexpression tool and the PPI tool) can be used autonomously but can also be used consecutively to build a network of coexpression links as well as PPIs. 
+Additionally, localization and functional information (GO terms and rotein domain information) can be displayed on the constructed networks.
+
+We described the metadata of the microarray experiments by manually assigning ontology terms.
+We compiled different, so-called predefined expression compendia
+
+
+COEXPRESSION TOOL:
+Using the coexpression tool, genes with similar expression profiles in a number of experimental conditions can be identified.
+Esta misma herramienta podria dividirse en 2, una opcion es usar predefined expression compendia y la otra es compile user-defined data sets.
+The ontology terms allow an easily reproducible and intuitive selection of the microarray experiments without going through each individual experiment. Users should keep in mind that user-defined expression data sets should be large enough to enable reliable calculation of the correlation coefficients.
+
+-Step 1: the coexpression tool page is displayed, where one or more genes can be introduced for coexpression analysis.
+-Step 2: One or more of the predefined, previously generated user defined, or personal, preprocessed expression data sets needs to be selected. SE SELECCIONAN LOS MICROARRAYS SOBRE LOS CUALES SE VA A EVALUAR LA COEXPRESSION.
+-Step 3: Despue se debe definir el metodo para evaluar la correlacion(Pearson o Spearman), el valor de threshold absoluto (valor de coeficiente) o relativo (top x genes).
+Hay 3 opciones de correlacion: de a pares entre los genes que se definieron en el step 1, de a pares entre los query y 'vecinos' (todos los genes del genoma), 
+de a pares entre los query y los 'vecinos' + los vecinos entre si.
+En este paso tambien se debe seleccionar si solo se visualiza la coexpresion o tambien se quiere agregar localizacion y/o PPI
+
+Uses of this tool:
+Depending on the nature of the studied genes and the interest of the user, different input expression datasets can be imagined. 
+Global expression compendia will be used when a general view on the coexpression of, for instance, unknown genes is required. 
+By contrast, when looking for genes that are similar to a drought stress-responsive gene, an expression dataset representing abiotic stress conditions can be used to identify specific and relevant relations. 
+Moreover, coexpression can be calculated using multiple expression datasets, representing diverse conditions, and lead to the identification of those conditions in which the genes of interest show similar expression patterns.
+
+Intuitively, the use of different expression data sets can yield different degrees of expression correlation between genes because some genes might behave similarly under certain conditions and differently under others.
+In other words, condition-dependent and condition-independent coexpression analyses have to be distinguished. 
+Therefore, a flexible and efficient compilation of the expression data sets used to calculate expression correlation needs to be enabled.
+
+PPI Tool:
+-Step 1: The PPI tool needs one or more proteins as input.
+-Step 2: Next, different PPI databases can be chosen to extract only experimentally identified PPIs, only computationally predicted interactions, or both.
+-Step 3: As in the coexpression tool, 3 different search options can be selected: search for PPI in a pairwise manner, search for proteins that interact with the given protein(s), 
+and/or search if the proteins that interact with the given protein(s) also interact. 
+En este paso tambien se define el formato de output: cytoscape o text.
+
+Uses of PPI tool:
+Integration of microarray data with PPI data can, for instance, lead to the identification of protein complexes and/or coregulated genes, 
+a better understanding of a group of differentially expressed genes, and the prediction of putative functions for unknown genes
+
+Integration of Coexpression and PPI tools:
+El resultado puede depender del orden en que se hagan:
+-when a coexpression analysis is followed by a PPI search, all coexpressed genes of the first analysis are used as input for the PPI search and genes that do not show coexpression with other genes are not included as input for the PPI tool. 
+-when first performing a PPI search, only proteins for which interactions have been found will be used as input for the subsequent coexpression analysis.
+
+
+
+In the future, we plan to add different data types as they become available. 
+First, we foresee the incorporation of cis-regulatory elements, which can be tightly linked with the coexpression results, as is worked
+out in AtCOECiS (Vandepoele et al., 2009). Second, through comparative genomics approaches, constructed networks can be transferred to other plant species, such as poplar (Populus species), tomato (Solanum lycopersicum), rice (Oryza sativa), and crops of interest.
+Last, the inclusion of protein-DNA (or transcription factor-target) interactions will be very profitable, as data are generated through chromatin immunoprecip-
+itation (ChIP)-chip and ChIP-seq or indirectly through the analysis of transcriptome data.
+ 
+\end{itemize}
+
+
+
+
+
+
+\section{Paper: Correlation analysis of the transcriptome of growing leaves with mature leaf parameters in a maize RIL population}
+\subsection{Resumen-Intro}
+Objetivo: identify genes and networks involved in final organ size (especificamente el tamaño de la hoja).
+In-depth phenotyping of 103 lines of a biparental RIL population derived from the inbred parents B73 and H99  was combined with transcriptome profiling to dissect leaf size, growth, and shoot-related traits into phenotypic and molecular components
+
+We assessed variation in 103 lines of the Zea mays B73xH99 RIL population for a set of final leaf size and whole shoot traits at the seedling stage, complemented with measurements capturing growth
+dynamics, and cellular measurements. 
+Most traits correlated well with the size of the division zone, implying that the molecular basis of final leaf size is already defined in dividing cells of growing leaves (por que?? si analizaron varios traits, no solo en tamaño de la hoja??).
+Es decir, se analizan un set de caracteristicas en lineas RILs obtained from 2 founders. Las caracteristicas analizadas son el final leaf size y algunas caracteristicas generales de la plantula.
+% Se encuentra que la mayoria de estas caracteristicas se corresponden con el tamaño en la zona de division, lo cual implica que el tamaño final de la hoja ya esta definido en las hojas crecientes.
+Therefore, we searched for association between the transcriptional variation in dividing cells of the growing leaf and final
+leaf size and seedling biomass, allowing us to identify genes and processes correlated with the specific traits.
+
+
+\subsection{Leaf development and leaf size}
+
+At the cellular level, leaf size is determined by two processes, cell proliferation and cell expansion, which are highly coordinated.
+Although leaf development is well described at the cellular level, knowledge on the molecular mechanisms that determine leaf growth and final size is still fragmentary, due to the complex polygenic control of these traits
+
+Several approaches have been followed to dissect the genetic circuits that underlie leaf growth.
+Forward genetics screens have proven to be useful in the identification of genes that have the potential to contribute to natural variation of phenotypic traits and their specific function. 
+En estos ensayos, a partir de un fenotipo observado (generalmente buscado mediante mutaciones a proposito en lineas del laboratorio) se buscan caracteristicas en el genotipo que lo producen.
+En el caso del maiz, la mayoria de los screening de mutaciones realizados se limitan a un conjunto de cepas usadas en el laboratorio, que solo representan una pequeña porcion de la variacion natural (sobre todo teniendo en cuenta la gran diversidad genetica y fenotipica del maiz). 
+En este contexto, analizar la gran variedad de fenotipos encontrados en la naturaleza permite complementar los estudios identificando una gran cantidad de nuevos genes y alelos, especificamente asociados a quantitative traits.
+
+Generalmente, lo que se hace es desarrollar poblaciones RIL (recombinant inbred line) y aplicar linkage analysis (para ver que caracteristicas se heredan juntas, es decir que estan asociadas a un loci). 
+Ademas, los estudios de GWAS permiten identificar variaciones SNPs para specific traits. 
+However, these approaches are time consuming and the regions identified by linkage mapping and the SNPs detected using genome-wide association analysis often contain a large number
+of candidate genes that need to be further narrowed down using complementary analyses or a priori knowledge
+
+A complementary approach that became available thanks to the recent development of new -omics tools is high throughput profiling of large mapping populations,
+offering new perspectives for genetic integration of several levels of molecular regulation of phenotypic trait variation.
+In maize, differences in gene expression patterns are suggested to be a more important cause of subtle changes in quantitative traits than alterations in protein sequences causing defective proteins.
+Therefore, exploring transcriptome variation in mapping populations has great potential to characterize the regulatory mechanisms and candidate genes that are at the basis of phenotypic differences.
+Exploring transcriptome variation in mapping populations has great potential to characterize the regulatory mechanisms and candidate genes that are at the basis of phenotypic differences
+The use of new transcriptomics tools has resulted in the generation of large amounts of tissue-specific expression data that have led to new insights into the molecular basis of leaf development
+
+
+To study the molecular mechanisms underlying leaf growth, it is important to focus on the growth zone.
+More specifically, since the majority of the growth regulatory genes that have been described so far affect the final number of cells rather than the final size of the cells, focusing on transcriptional changes in the DZ (division zone) is
+expected to have the largest potential for finding new regulatory genes for final leaf size.
+Por lo tanto, el enfoque está en evaluar los cambios transcripcionales en la zona de division.
+
+The number of studies that link differences in expression levels to phenotypic measurements on a large scale remains limited up to now.
+\textbf{In this study we combined a detailed phenotypic analysis of maize seedlings, focusing on leaf size, with transcript profiling of dividing leaf tissue of the B73xH99 recombinant inbred line population to further unravel the molecular basis of leaf development.}
+
+En primer lugar se hace un analisis de distintos parametros fenotipicos. 
+Los parametros que se analizan no son solo end point measurements (leaf length, width, area and weight, and whole-shoot measurements at the seedling stage) sino tambien se evaluo el leaf development  
+at the cellular level by determining the size of the DZ during steady state growth of the fourth leaf in all RILs.
+Capturing dynamic and cellular measurements could reveal new regulatory genes related to more specific processes compared with only considering end point measurements
+
+
+Correlation analysis between these phenotypic traits revealed that the size of the DZ is positively correlated with most of the final size traits, supporting the hypothesis that the molecular basis underlying final leaf size is already determined in
+dividing cells of a growing leaf. To further decipher these molecular networks, we captured the transcriptional differences in dividing cells early during leaf development in a RIL population and combined this with the detailed phenotyping.
+Entonces, el analisis de transcription se hace sobre las celulas en la zona de division (DZ) para tratar de encontrar alguna relacion entre cambios en la transcripcion (differential expression??) y las caracteristicas fenotipicas (que estan relacionadas con el tamaño de la hoja).
+The identification of candidate genes — novel genes as well as known growth regulators — not only ameliorates our knowledge of the gene network underlying leaf development but also provides a framework to identify transcriptional markers for
+breeding new varieties and offers opportunities for genetic modification approaches.
+
+
+
+
+\subsubsection{The size of the DZ correlates with final leaf size, shoot and growth parameters}
+
+
+\subsubsection{Transcriptome analysis of proliferative tissue confirms the correlation between leaf size, growth and shoot parameters}
+As variations on the sequence level can affect the alignment of reads to the reference genome, differences in the genetic background of the two parental lines could affect gene expression quantification
+differently in different RILs. Therefore, we focused on conserved genes, selecting expressed genes with a low percentage of SNPs across maize inbred lines. 
+
+The expression data and the phenotypic data were combined after normalization by calculating PCCs between transcript expression values and trait values across all RILs.
+Using this data we could identify genes correlated higher than expected with a certain phenotype compared with a random gene set.
+The maximal correlation coefficients were rather low, which is not unexpected since the traits under study are polygenic and known to be controlled by a large number of small-effect genes.
+
+\textbf{IMPORTANTE:} Although we could identify individual genes for which expression level is clearly associated with one or more of the traits we analyzed, the low correlation levels and the observation
+that no single gene was for all RILs associated with a particular trait across all RILs suggests that not one gene but a network of multiple genes is underlying the traits under study.
+
+En primer lugar se hace una descripcion general del perfil de genes que (anti)correlacionan: 
+pocos genes tienen correlacion positiva para algunos traits y negativa para otros, 
+pocos genes tienen correlaciones tanto para traits de la hoja y para traits del shoot, 
+como maximo un mismo gen correlaciona con 8 traits (esto ocurre para 3 genes), 
+etc... 
+
+
+In a next step we evaluated if the correlated genes for the different traits were enriched in comparable processes. 
+Enrichment for specific processes was calculated based on MapMan gene function annotations.
+
+
+% COEXPRESSION
+To visualize the co-expression of the genes correlating with the traits, we generated a correlation network starting from the 1740 genes that (anti-)correlated to at least one of the traits.
+
+
+\subsubsection{Materials and methods}
+
+\textbf{RNAseq} It has been reported that inbred lines of maize are very divergent. 
+This could introduce artifacts in the mapping of reads and therefore inaccurate transcript quantification. 
+Therefore, we selected for genes that are conserved between inbred lines. 
+To make this selection more robust, we included eight inbred lines in this selection procedure, among which were the two parental lines of the RIL population studied here. 
+RNA-seq data of proliferative tissue for these eight inbred lines was mapped to the B73 reference genome.
+A coverage cutoff was applied, using the R/Bioconductor package with default HTSFilter parameter settings.
+This coverage cutoff retained 50 \% of the genes which are expressed in at least one of the parents.
+
+Next, SNP calling was performed. The reads of the different libraries were preprocessed separately. 
+Read sorting was done using SAMtools and deduplication using Picard MarkDuplicates.
+Subsequently, variants were called using GATK.
+Falta todo el tratamiento de SNPs.
+
+
+Count data of the filtered set of 15,051 transcripts were normalized for library size with the default normalization methods in the DESeq2 package in R.
+Transcripts expressed in less than 5\% of samples (transcript count > 0) were removed. 
+An inverse hyperbolic sine transformation was applied on the remaining transcript levels ("asinh" function in R), which is able to transform the zero counts. 
+Additionally, the 5 \% least varying transcripts (based on the coefficient of variation) were removed from further analyses.
+
+\textbf{Transcript correlation (transcript coexpresion??)}
+A transcript expression correlation network was calcu-
+lated across all transcripts correlated with at least one
+trait, with transcripts as nodes and Pearson correlation
+values between transcripts as edge weights. For cluster-
+ing and visualization, edges with correlation values
+below 0.6 were discarded. The resulting weighted net-
+work was clustered with the Markov cluster algorithm
+(MCL) [55] using clusterMaker version 1.10 [144] with
+granularity (inflation) parameter 2 and default advanced
+parameters, and visualized in Cytoscape version 3.1.0.
+A circular layout was used for clusters consisting of at
+least 15 transcripts; the rest of the network was visual-
+ized with the prefuse force directed layout.
+
+
+
+Functional enrichment analyses of the transcript clusters were based on the pathway annotations defined in MapMan.
+The file with mapped maize transcripts and pathways was downloaded from the MapMan webpage. For enrichment analyses of MapMan categories, the GOseq package was used in R.
+
+
+
+
+
+
+
+
+
+
+\section{Paper: Genetic properties of the MAGIC maize population: a new platform for high definition QTL mapping in Zea mays}
+\subsection{Intro-resumen}
+The core of the paper is the generation of 1,636 MAGIC maize recombinant inbred lines derived from eight genetically diverse founder lines.
+Es decir, se produce una gran cantidad de RILs con la particularidad que estos son generados a partir de multiple founders. 
+Se caracteriza parte de esta poblacion (529 MAGIC maize lines) y se muestra that the population is a balanced, evenly differentiated mosaic of the eight founders, with mapping power and resolution strengthened by high minor allele frequencies and a fast decay of linkage disequilibrium.
+(de alguna forma, la reparticion de las caracteristicas genotipicas esta balanceada y es al azar entre los miembros de la poblacion.....ESTO ES CORRECTO???)
+Por lo tanto, se produjo the first balanced multi-parental population in maize, a tool that provides high diversity and dense recombination events to allow routine quantitative trait loci (QTL) mapping in maize.
+\textbf{Esto es lo importante: el objetivo de generar estas lineas es reportar genes candidatos para distintos QTLs (es decir, high-power and high-definition QTL mapping)}
+La conclusion es que, efectivamente, the design of MAGIC maize allows the accumulation of sequencing and transcriptomics layers to guide the identification of candidate genes for a number of maize traits at different developmental stages.
+
+
+\subsection{MAGIC maize population}
+
+La primera parte es todo sobre como se generan the MAGIC maize population y del analisis de composition and diversity.
+
+Importante: obtienen el genoma y transcriptoma de los founders (padres de las lineas). Segun dice en el paper esto es porque: 
+The ability to identify candidate genes in MAGIC maize QTL mapping is improved by incorporating whole geome sequencing and transcriptomics data of the founder lines.
+
+Revisar la parte de: MAGIC maize power simulation
+
+\subsection{QTL mapping with the MAGIC maize}
+COMO HACEN EL MAPPING DE QTLs?????????????/
+
+
+
+\section{PAPER: Combined Large-Scale Phenotyping and Transcriptomics in Maize Reveals a Robust Growth Regulatory Network}
+
+Se hace un analisis similar al que se hizo en el paper Correlation analysis of the transcriptome of... pero sobre la multiparent MAGIC population, ademas, the results of both analyses were integrated.
+
+\subsection{Resume}
+% Data from a multiparent advanced generation intercross (MAGIC) population.
+In this study, we performed detailed phenotyping and transcriptome analysis of 94 lines of the MAGIC population and combined this with the previously described phenotyping and transcriptome analysis of 103 lines of
+the biparental B73xH99 population. So, the study combines transcriptome profiling of proliferative leaf tissue with indepth phenotyping of the fourth leaf at later stages of development in 197 recombinant inbred lines of two different maize populations (MAGIC and biparental-line).
+Our results illustrate the power of combining in-depth phenotyping with transcriptomics in mapping populations to dissect the genetic control of complex traits and present a set of candidate genes for use in biomass improvement.
+
+Why use two different populations? Integrating results from different populations may allow for the identification of the most robust players in the growth-related molecular network across different lines.
+
+\subsection{Intro}
+Exploiting natural variation has been proposed as a complementary approach to the traditional, genecentric reverse and forward genetics approaches to identify new genes (Weigel, 2012). 
+Knockdown or overexpression of single genes does not capture the extensive genetic variation present in natural populations, which results from a combination of single	-nucleotide substitutions, insertions, deletions, copy number variations, epigenetic changes, and expression differences.
+In the monocotyledonous species maize, the intraspecific variation is large and offers great potential to relate genotype to phenotype.
+Also, several mapping populations are available, but until now, only a few were used to determine the genetic control of leafrelated traits via quantitative trait locus (QTL) or genome-wide association studies
+Although several small-effect QTLs were identified in these studies, further fine-mapping using complementary approaches or a priori knowledge is required to find the genes underlying the quantitative trait.
+
+Since leaf growth is driven by proliferation and expansion, zooming in on proliferative and/or expanding tissue is required to identify the regulatory networks underlying leaf development. 
+Since it was recently suggested that it is the final number of cells that primarily determines final leaf size, we focus our transcriptome analysis specifically on proliferative tissue of the growing leaf.
+
+Although the genetic and phenotypic variation in a classical biparental RIL mapping population (like the one presented before in Correlation analysis of the transcriptome of ...) provides a valuable source of information, 
+the possibility to detect variation in expression that is associated with phenotypic variation remains limited, since it depends on the polymorphisms between only two parents.
+
+The MAGIC population that was recently established for maize (in paper Genetic properties of the MAGIC maize population...) has a larger genetic diversity than biparental populations, and as such, the number of components in the regulatory network that can be identified is expected to be higher.
+Moreover, integrating results from different populations may allow for the identification of the most robust players in the growth-related molecular network across different lines.
+In this study, we performed detailed phenotyping and transcriptome analysis of 94 lines of the MAGIC population and combined this with the previously described phenotyping and transcriptome analysis of 103 lines of the biparental B73xH99 population. 
+We identified a set of 226 genes with expression levels in the division zone (DZ) of the growing leaf (anti)correlating with leaf phenotype measurements in both populations.
+
+\subsection{Work}
+They do a similar analysis to that in (Correlation analysis of the transcriptome of..), that is, in-depth phenotyping of the lines combined with transcriptome profiling to dissect leaf size, growth, and shoot-related traits into phenotypic and molecular components.
+But, of course, in this case the analysis was done on the MAGIC population. And then, results of both analyses were integrated.
+Concerning phenotyping, the analized traits are: final leaf size-related such as leaf length (LL), leaf width (Lwi), leaf area (LA), and leaf weight (Lwe), measurements that capture growth kinetics, such as growth rate (leaf elongation rate [LER]) and duration (emergence, time point of maximal LER [Tm], time point when leaf 4 reaches its final length [Te], and leaf elongation duration [LED5-e], 
+and cellular measurements, such as the size of the cell DZ. In addition, whole-shoot variables were measured at the seedling stage: fresh weight, dry weight, leaf number (LN), and vegetative (V)-stage
+
+\textbf{Correlation experiment:} Pearson correlation coefficients (PCCs) between the traits were determined based on the data obtained for the MAGIC population and also for the combined data of both populations, and compared with our previous analysis for the biparental RIL population
+\textbf{Results:} In general, the PCCs were higher for the MAGIC population than for the biparental RIL population which may be due to the fact that the phenotype variation in the MAGIC population is generally larger than that
+of the biparental RIL population  (i.e. the phenotype distributions are broader) which may suppress the negative influence of stochastic and measurement noise on PCC values *****NOT CLEAR!!
+
+
+\textbf{Transcriptome analysis:} We performed RNA sequencing of proliferative tissue of 94 lines of the MAGIC population (this has already been done for 103 lines in the biparental population).
+Linear correlation between phenotypes and transcript levels was determined by calculating PCCs between the expression level of each transcript and each trait in both populations separately (NO SE HABIA HECHO ANTES PARA LA BIPARENTAL???).
+The $q_0.99$ and $q_0.01$ PCC (i.e. the correlation coefficient of the 1\% best [anti] correlating transcripts, this \% was defined arbitrarily) were determined before and after permutation of the trait data (permutation of trait data provides an idea of PCC expected at random? it is like making a random sampling?)
+\textbf{Results:} For the majority of the traits, the q0.99 and q0.01 PCC values were significantly higher than those expected at random (myself: so..they took the highest correlations and anticorrelations PCC values and compared these with those obtained from pemutation(=random expected values), these random values are used as cutoff to see if the real results are significant).
+This indicates that the gene sets identified by this arbitrarily chosen limit of 1\% contain genes whose expression levels in proliferative tissue of a growing leaf correlate significantly with final size measurements.
+They then make some analysis (and conclusions) for each set of transcripts that have high (and significant) PCC values with a particular trait and for 2 or more traits (overlap between populations of significant transcripts correlating with a specific trait).  
+
+Further analyses were restricted to the 1\% best correlating and anticorrelating genes for each trait or 286 genes for each trait (reffered as the correlated and anticorrelated gene sets).
+In the MAGIC population, we found 21 genes associated with nine traits, the maximum in the biparental RIL population being eight traits.
+\textbf{Transcriptome analysis combining both populations:} 226 genes were (anti)correlating with at least one of the traits in both populations, a strong reduction compared with the numbers found in the populations separately (1,740 and 1,367 genes in the biparental and MAGIC populations, respectively)
+It is worth noting that for none of the traits were there correlating genes in one population and anticorrelating genes in the other population.
+The strong reduction of the number of correlated genes by combining the two populations, combined with the fact that the overlap remains significantly higher than expected by chance for the majority of the traits, indicates that this approach is efficient in identifying the genes that are more robustly associated with a specific trait, regardless of the population context, and thus might be more relevant to characterize functionally.
+ 
+\textbf{Gene sets functions} All genes were assigned to MapMan functional categories (gene function categories??), and tests for the enrichment of functional categories in the correlating gene sets for the different traits were performed for the two populations separately, to verify if gene sets were enriched for comparable categories in the two popluations
+\textbf{Results:} For positively correlating genes, the major enriched functional category in both populations was regulation of transcription.
+
+***THERE ARE SOME MORE ANALYSIS DONE ON THE FUNCTIONAL CATEGORIES OF THE GENES***
+
+\textbf{Toward a Robust Growth Regulatory Network:} From the 226 genes (identified as (anti)correlating with at least one of the traits in both populations), the majority of these genes was not identified until now as linked to growth, and 48 of these genes even had no assigned function.
+To obtain a better insight into the putative coregulation of these 226 genes, we used CORNET Corn to identify networks of coexpressed genes based on the expression of these query genes in two publicly available expression compendia. Additionally, protein-protein interactions
+based on experimental and computational data (primarily inferred from Arabidopsis) were added to this network.
+
+
+\subsection{Results}
+As expected, the phenotypic variability was found to be larger in the MAGIC population than in the biparental population, although general conclusions on the correlations among the traits are comparable.
+Data integration from the two diverse populations allowed us to identify a set of 226 genes that are robustly associated with diverse leaf traits.
+This set of genes is enriched for transcriptional regulators and genes involved in protein synthesis and cell wall metabolism. In order to investigate the molecular network context of the candidate gene set, we integrated our data with publicly available
+functional genomics data and identified a growth regulatory network of 185 genes. Our results illustrate the power of combining in-depth phenotyping with transcriptomics in mapping populations to dissect the genetic control of complex traits
+and present a set of candidate genes for use in biomass improvement.
+
+
+
+
+\section{PLAZA}
+
+
+
+
+\section{QTL mapping concepts}   
+% % % % PONER TODOS LOS CONCEPTOS RELACIONADOS CON QTL MAPPING QUE ESTAN ANTES 
+
+\textbf{Most of this is extracted from the review: The genetics of quantitative traits: challenges and prospects (Trudy F. C. Mackay , Eric A. Stone  and Julien F. Ayroles)}
+
+\subsection{Intro}
+Until the late 1980s, the lack of polymorphic markers limited the genetic dissection of complex traits to a few model organisms. 
+Since then, the discovery of abundant molecular markers, advances in rapid and cost-effective genotyping methods and the development of statistical methods for QTL mapping have revolutionized the field of mapping quantitative traits.
+
+Despite two decades of intensive effort, we have fallen short of our long-term goal of explaining genetic variation for quantitative traits in terms of the underlying genes, the effects of segregating alleles in different genetic backgrounds and in a range of ecologically relevant
+environments as well as on other traits, the molecular basis of functional allelic effects and the population frequency of causal variants.
+The hurdle is not the intellectual foundation of QTL mapping methods but technological limitations
+
+\subsection{QTL mapping}
+The purpose of quantitative trait locus (QTL) mapping is to uncover the genetic basis of quantitative phenotypic variation. 
+Any QTL analysis therefore assumes that the organismal phenotype is variable within the mapping population.
+
+The premise of QTL mapping is that QTLs can be localized through their genetic linkage to visible marker loci with genotypes that we can readily classify. 
+If a QTL is linked to a marker locus, then individuals with different marker locus genotypes will have different mean values of the quantitative trait.
+The most common molecular markers are SNPs, polymorphic insertions or deletions (indels) and simple sequence repeats (microsatellites).
+
+QTLs can be mapped in families or the segregating progeny of crosses between genetically divergent strains (linkage mapping), or in unrelated individuals from the same population (association mapping):
+\begin{description}
+ \item [Linkage-based analyses] which focus on individuals for which the relationships are known, seek to identify segregating genetic markers that predict the organismal phenotype.
+ Predictive markers are near (linked to) causal loci, and so the predictive markers and the causal loci tend to segregate together.
+This tendency is disrupted by recombination, and the probability of recombination increases with physical distance; the most predictive markers are therefore expected to reside in proximity of the causal locus.
+
+(myself) In biparental mapping populations, the posible genotypes in any analyzed line are a combination of the original parents. There can be high number of different genotypes (depending on how many markers are evaluated).
+But, when dealing with biallelic markers (present in both strands), FOR EACH ALLELE, each marker can take only one of 2 values , the one from parent 1 or the one from parent 2. 
+The lines can be gomozygous (one marker for each parent) or heterozygous (both allels contain the same markers)
+
+ 
+ \item[Association mapping] is also based on recombination, but the recombination used in this strategy is historical.
+ The haplotypes in the population are obtained after many generations of random mating, so recombination effectively shuffles the initial haplotypes.
+The effect of this shuffling is to uncouple all but the most tightly linked markers from the causal locus; because only these tightly linked markers will predict the organismal phenotype, the causal locus can be localized with precision.
+
+\end{description}
+
+Mapping QTLs has two components: detection and localization. The power to detect QTLs depends on their effects and allele frequencies.
+
+\subsection{Mostly my description}
+Genotype the line (values for each allele of each marker, 1 of 3 values). Phenotype the lines (set a value for the trait).
+Then statistically analyze each marker position to evaluate if there is a mean difference in the trait phenotypes between marker genotype classes (i.e any of the 3 posible values has a significative difference with the others). 
+If there is such a significative difference, the marker is linked to the QTL. Therefore the results can be asociated with a LOD score.
+These are shown in a graphic of LODscore Vs genomic position (showing the genomic position of each marker).
+This graphic will show a peak around a certain position (the QTL). 
+\textbf{Mapping resolution and population size:} Depending on the number of markers used (and the mapping population?) the resulting graphic can have a higher resolution.
+In linkage-based studies, the haplotype blocks in the mapping population might be large and, as a consequence, the causal locus might only be mapped to a large region
+The haplotype blocks in an association mapping population tend to be much smaller, so it might be possible to localize the causal locus to a small genomic region.
+Localizing QTLs depends on the recombination frequency. In a linkage mapping context, recombination events need to occur in the mapping population.
+As the size of the interval in which we wish to localize the QTL decreases, the number of individuals required to detect at least one recombinant in the region of interest increases, as does the number of molecular markers necessary to detect recombination events.
+Association mapping uses historical recombination between QTLs and marker alleles in a random mating population and does not require as many individuals as linkage mapping for localizing QTLs
+The number of markers required in an association mapping study depends on the scale and pattern of linkage disequilibrium (LD). 
+If a group of markers is in high LD, we only need to genotype one of them as a proxy for all of the other markers in the LD block.
+
+\textbf{LOD score:} In genetics, a statistical estimate of whether two loci (the sites of genes) are likely to lie near each other on a chromosome and are therefore likely to be inherited together as a package.
+\textbf{Linkage desequilibrium:} In population genetics, linkage disequilibrium is the non-random association of alleles at different loci i.e. the presence of statistical associations between alleles at different loci that are different from what would be expected if alleles were independently, randomly sampled based on their individual allele frequencies. 
+If there is no linkage disequilibrium between alleles at different loci they are said to be in linkage equilibrium.
+LD is usually the result of a close physical location and lack of recombination between loci. 
+One of the consequences of high LD in the human genome is the presence of haplotype blocks consisting of large numbers of polymorphic markers that can be grouped into a limited number of haplotypes
+
+\subsection{After mapping}
+In organisms with well-annotated genomes, we can query which of the candidate genes in the QTL region are causal. 
+High-resolution recombination mapping provides unambiguous proof of causality. 
+
+Strategies to corroborate evidence of causality in the absence of recombination mapping include replication in independent studies, identifying potentially functional DNA polymorphisms between alternative alleles of one of the candidate genes, showing a difference in
+mRNA expression levels between genotypes, showing that mRNA or protein is expressed in tissues thought to be relevant to the trait and showing that mutations in candidate genes affect the trait or fail to complement QTL alleles. 
+Formal proof that a specific allelic substitution affects the trait is provided by replacing the allele of a candidate gene in one strain with the allele in another strain without introducing any other changes in the genetic background, which is currently only possible in yeast.
+
+High-resolution mapping typically shows that single QTLs fractionate into multiple closely linked QTLs, which often have opposite effects.
+The conclusions from the past two decades of studies are that QTL alleles with large effects are rare and that the bulk of genetic variation for quantitative traits is due to many loci with effects 
+that were individually or in aggregate (owing to the tight linkage of QTLs with opposite effects) too small to detect because previous studies were underpowered.
+
+
+\end{document}
